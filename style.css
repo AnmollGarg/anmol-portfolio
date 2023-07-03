@@ -1,0 +1,778 @@
+@font-face {
+  font-family: 'Telegraf Medium';
+  src: url('Fonts/Telegraf Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Garet-Heavy';
+  src: url('Fonts/Garet-Heavy.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Garet-Book';
+  src: url('Fonts/Garet-Book.otf') format('opentype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+
+
+*{
+  ::selection {
+    background: #00ffc8;
+    color: #000000;
+  }
+}
+
+html {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar {
+  background-color:black !important;
+  opacity: 1;
+  display: flex;
+  justify-content: flex-end;
+  font-family: "Telegraf Medium", Arial, sans-serif;
+}
+
+.navbar a {
+  color: rgb(160, 160, 160);
+  text-decoration: none;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.name {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: "Telegraf Medium", Arial, sans-serif;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.hero-left {
+  flex: 1;
+  padding: 150px 0 0 150px;
+  margin-top: 20px;
+  font-family: "Telegraf Medium", Arial, sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.profile-image {
+  flex: 1;
+  text-align: right;
+
+}
+
+.profile-image img {
+  width: 70%;
+  height: auto;
+  margin-right: 150px;
+}
+
+.hero-button {
+  margin-top: 80px;
+  margin-bottom: 0px;
+  background-color: #000000;
+  padding: 15px;
+  border: 3px solid #e5e900;
+  color: #e5e900;
+  font-size: 16px;
+  font-weight: 900;
+  margin-left: 50px;
+  font-family: "Garet-Heavy", Arial, sans-serif;
+}
+
+/* Edu & Exp  */
+
+.edu-exp {
+  background-color: #F8C954;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.edu-exp-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: "Telegraf Medium", Arial, sans-serif;
+  font-size: 80px;
+  font-weight: bolder;
+  background-color: #F8C954;
+  padding: 150px 0 0 150px;
+}
+
+hr {
+  width: 90%;
+  margin: 0px auto;
+  margin-bottom: 90px;
+  border: none;
+  margin-top: 150px;
+  border-top: 2px solid #000000;
+}
+
+.edu-exp-timeline {
+  display: flex;
+  flex-direction: row;
+}
+
+.timeline-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: auto;
+  margin-left: 200px;
+  margin-bottom: 100px;
+}
+
+.edu-exp-year {
+  font-size: 24px;
+  font-weight: bolder;
+  font-family: "Garet-Book", Arial, sans-serif;
+}
+
+.edu-exp-content {
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: "Garet-Book", Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+/* Skills  */
+.style {
+  display: flex;
+  padding: 150px;
+  background-color: #F878CD;
+}
+
+.style-top {
+  font-family: "Garet-Book", Arial, sans-serif;
+  font-size: 32px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
+.style-title {
+  font-family: "Telegraf Medium", Arial, sans-serif;
+  font-size: 64px;
+  font-weight: bolder;
+}
+
+.style-left {
+  flex: 1;
+}
+
+.style-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.progress-bar {
+  margin-top: 20px;
+  width: 100%;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-name {
+  padding: 2px 5px;
+  font-weight: bold;
+  font-family: "Garet-Book", Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.progress {
+  height: 35px;
+  background-color: #ffffff;
+  border-radius: 40px;
+  margin-bottom: 10px;
+}
+
+.front-web {
+  width: 90%;
+  background-color: #000000;
+  border-radius: 40px;
+  height: 35px;
+  margin-bottom: 40px;
+}
+
+.python {
+  width: 60%;
+  background-color: #000000;
+  border-radius: 40px;
+  height: 35px;
+  margin-bottom: 40px;
+}
+
+.graphic-designing {
+  width: 80%;
+  background-color: #000000;
+  border-radius: 40px;
+  height: 35px;
+  margin-bottom: 40px;
+}
+
+.java {
+  width: 20%;
+  background-color: #000000;
+  border-radius: 40px;
+  height: 35px;
+  margin-bottom: 40px;
+}
+
+
+/* My Work  */
+.my-work {
+  padding: 150px;
+  margin: 0px;
+}
+
+.my-work-title {
+  font-family: "Telegraf Medium", Arial, sans-serif;
+  font-size: 64px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+
+}
+
+.my-work-image {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.my-work-image img {
+  margin-left: 10px;
+  object-fit: cover;
+  height: 200px;
+  width: auto;
+}
+
+
+/* Specialization  */
+
+.spec-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  background-color: #046463;
+  padding: 150px;
+}
+
+.grid-item {
+  color: white;
+  background-color: #046463;
+  padding: 30px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+  position: relative;
+  margin-left: -24px;
+  font-family: "Telegraf Medium", Arial, sans-serif;
+}
+
+.arrow {
+  background-color: #ffffff;
+  color: #046463;
+  position: absolute;
+  left: 120px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  font-family: "Telegraf Medium", Arial, sans-serif;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+}
+
+/* Brands Work With  */
+.brands {
+  padding: 150px;
+  background-color: #F878CD;
+}
+
+.brands-top {
+  font-family: "Telegraf Medium", Arial, sans-serif;
+  font-size: 64px;
+  font-weight: bolder;
+}
+
+.brands-image {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.brands-image img {
+  margin-left: 10px;
+  object-fit: cover;
+  height: 200px;
+  width: auto;
+}
+
+/* Contact Me  */
+
+.contact {
+  background-color: black;
+  display: flex;
+  padding: 150px;
+  color: white;
+}
+
+.contact-left {
+  flex: 1;
+  width: 100%;
+  height: auto;
+}
+
+.contact-right {
+  flex: 1;
+  text-align: left;
+  display: block;
+  align-content: flex-start;
+
+}
+
+.contact-title {
+  font-family: "Telegraf Medium", Arial, sans-serif;
+  font-size: 80px;
+  font-weight: bolder;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.contact-heading {
+  font-family: "Garet-Book", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.contact-detail {
+  font-family: "Garet-Book", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 35px;
+  color: grey
+}
+
+.contact-social {
+  color: white;
+  background-color: #000000;
+  font-family: "Garet-Book", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contact-social i.fa {
+  margin-left: 15px;
+  margin-top: 20px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.contact-social i.fa:hover {
+  color: #ffffff;
+}
+
+.contact-left img {
+  margin-left: -50px;
+  width: 80%;
+  height: 90%;
+}
+
+.working{
+  background: #000;
+  color: #ffffff;
+  font-family: "Telegraf Medium", Arial, sans-serif;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* Navbar */
+  .navbar {
+    justify-content: center;
+  }
+
+  .navbar a {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+  }
+
+  /* Hero */
+  .hero {
+    flex-direction: column;
+  }
+
+  .name {
+    top: 30px;
+    font-size: 30px;
+    position: relative;
+    margin-right: 200px;
+  }
+
+  .hero-left {
+    padding: 50px;
+    font-size: 36px;
+  }
+
+  .profile-image {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .profile-image img {
+    width: 50%;
+    margin-right: 0;
+    margin-bottom: 0px;
+  }
+
+  .hero-button {
+    margin-top: 40px;
+    margin-left: 0;
+  }
+
+  /* Edu & Exp */
+  .edu-exp-title {
+    font-size: 36px;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .edu-exp-timeline {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .edu-exp-content {
+    font-size: 14px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .edu-exp-year {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .timeline-item {
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+
+
+  /* Skills */
+  .style {
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .style-right {
+    margin-top: 20px;
+  }
+
+  .style-left{
+    font-size: 36px;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .style-title{
+    font-size: 36px;
+  }
+
+  .front-web {
+    width: 90%;
+    background-color: #000000;
+    border-radius: 40px;
+    height: 35px;
+    margin-bottom: 40px;
+  }
+  
+  .python {
+    width: 60%;
+    background-color: #000000;
+    border-radius: 40px;
+    height: 35px;
+    margin-bottom: 40px;
+  }
+  
+  .graphic-designing {
+    width: 80%;
+    background-color: #000000;
+    border-radius: 40px;
+    height: 35px;
+    margin-bottom: 40px;
+  }
+  
+  .java {
+    width: 20%;
+    background-color: #000000;
+    border-radius: 40px;
+    height: 35px;
+    margin-bottom: 40px;
+  }
+
+
+/* My Work */
+.my-work {
+  padding: 50px;
+  margin: 0;
+}
+
+.my-work-title {
+  font-family: "Telegraf Medium", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bolder;
+  margin-bottom: 50px;
+}
+
+.my-work-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.my-work-image img {
+  margin: 10px;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+  max-width: 300px;
+}
+
+
+
+/* Specialization */
+.spec-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  background-color: #046463;
+  padding: 50px;
+}
+
+.grid-item {
+  color: white;
+  background-color: #046463;
+  padding: 30px;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 25px;
+  position: relative;
+  font-family: "Telegraf Medium", Arial, sans-serif;
+}
+
+.arrow {
+  background-color: #ffffff;
+  color: #046463;
+  position: absolute;
+  left: 5%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  font-family: "Telegraf Medium", Arial, sans-serif;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+
+
+
+
+/* Brands Work With */
+.brands {
+  padding: 50px;
+  background-color: #F878CD;
+}
+
+.brands-top {
+  font-family: "Telegraf Medium", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bolder;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.brands-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 100px; */
+}
+
+.brands-image img {
+  margin: 10px;
+  object-fit: cover;
+  height: 200px;
+  width: auto;
+}
+
+
+/* Contact Me */
+.contact {
+  background-color: black;
+  /* display: flex; */
+  flex-wrap: wrap;
+  padding: 50px;
+  color: white;
+}
+
+.contact-left {
+  /* flex: 1; */
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.contact-right {
+  /* flex: 1; */
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact-title {
+  font-family: "Telegraf Medium", Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+}
+
+.contact-heading {
+  font-family: "Garet-Book", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.contact-detail {
+  font-family: "Garet-Book", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 25px;
+  text-align: center;
+  color: grey;
+}
+
+.contact-social {
+  background-color: #000000;
+  font-family: "Garet-Book", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contact-social i.fa {
+  margin: 0 10px;
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.contact-left img {
+  visibility: none;
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+}
+}
