@@ -57,6 +57,7 @@ ul {
   display: flex;
   justify-content: flex-end;
   font-family: "Telegraf Medium", Arial, sans-serif;
+  padding: 10px;
 }
 
 .navbar a {
@@ -459,6 +460,10 @@ hr {
     overflow-x: hidden;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     width: 100%;
     height: 100%;
@@ -468,15 +473,55 @@ hr {
   }
 
   /* Navbar */
-  .navbar {
-    justify-content: center;
+  /* .navbar {
+    justify-content: flex-end;
   }
 
   .navbar a {
     margin-left: 5px;
     margin-right: 5px;
     padding: 5px;
+  } */
+
+
+  .navbar {
+    justify-content: flex-end;
   }
+
+  .navbar .menu-icon {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+
+  .navbar .menu-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    background-color: #ffffff; 
+  }
+
+  .navbar .menu {
+    display: none;
+  }
+
+  .navbar .menu.show {
+    display: block;
+    padding: 60px;
+  }
+
+  .navbar .menu a {
+    display: block;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+  }
+
+
+  
 
   /* Hero */
   .hero {
@@ -765,7 +810,7 @@ hr {
   margin-top: 10px;
   color: #ffffff;
   font-size: 20px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 

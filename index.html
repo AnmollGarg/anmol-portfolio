@@ -14,6 +14,12 @@
     <div id="navbar">
     <!-- Navbar  -->
     <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu">
         <a href="#hero">Home</a>
         <a href="#edu">Education & Experience</a>
         <a href="#skill">Skills</a>
@@ -21,6 +27,7 @@
         <a href="#spec">Specialization</a>
         <a href="#brands">Brands I Work With</a>
         <a href="#contact">Contact Me</a>
+        </div>
     </div>
 </div>
 
@@ -38,7 +45,7 @@
                 </div>
             </div>
             <div class="profile-image">
-                <img src="Images/Profile Image 1.png" alt="">
+                <img src="/Images/Profile Image 1.png" alt="">
             </div>
         </div>
         </div>
@@ -200,7 +207,7 @@
         <!-- Contact Me  -->
         <div class="contact">
             <div class="contact-left">
-                <img src="Images/footer.png" alt="">
+                <img src="/Images/footer.png" alt="">
             </div>
             <div class="contact-right">
 
@@ -244,6 +251,15 @@
             <i class="fa fa-instagram" aria-hidden="true"></i>
         </div>
     </div>
+
+
+    <script>
+        // JavaScript to toggle the menu when menu icon is clicked
+        function toggleMenu() {
+          var menu = document.querySelector('.navbar .menu');
+          menu.classList.toggle('show');
+        }
+      </script>
 </body>
 
 </html>
